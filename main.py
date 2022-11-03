@@ -12,14 +12,18 @@ os.system('clear')
 ip=socket.gethostbyname(socket.gethostname())
 
 os.system('clear')
+#nhập id
+id=''
+nd='TÌNH HÌNH COVID 19 VIỆT NAM:
 
-id='100021668201187'
-nd='TÌNH HÌNH COVID 19 VIỆT NAM'
+#nhập thời gian
 timeh='18'
 timem='00'
 
 print('\n')
-ck='datr=bfEqY7HBnL1BlQanMtYvlYIZ;sb=bfEqY7P9-nYN-oyfYk5OUPBi;vpd=v1%3B660x360x2;c_user=100087250200164;xs=8%3AjdVKkh7UbDNAJw%3A2%3A1666381846%3A-1%3A-1;m_page_voice=100087250200164;fr=0Y4t7Q8EB37OYvpMu.AWWiKr1mzAGzx4R94MtAy9b22oE.BjKvFt.GF.AAA.0.0.BjWOm1.AWVBjv4zvuQ;m_pixel_ratio=2;wd=360x660;'
+#nhập cookie
+ck='cookie'
+
 while True:
     try:
         get=requests.get(f'https://mbasic.facebook.com/privacy/touch/block/confirm/?bid={id}&ret_cancel&source=profile',headers={'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5','cookie': ck,'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': '"Windows"','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'same-origin','sec-fetch-user': '?1','upgrade-insecure-requests': '1'}).text
